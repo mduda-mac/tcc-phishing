@@ -8,7 +8,7 @@
   "melhor_ensemble": "XGBoost",
   "h1_corroborada": true,
   "h2_ganho_f1": 0.0012391011825494402,
-  "h2_om_tempo": 0.8877878487942266,
+  "h2_om_tempo": 0.8451369890546443,
   "h2_om_nos": 0.19559358058790877,
   "h2_corroborada": false
 }

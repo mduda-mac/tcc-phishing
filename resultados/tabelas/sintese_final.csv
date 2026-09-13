@@ -1,5 +1,5 @@
 modelo,F1 validação,F1 teste ind.,Queda,Tempo (µs/URL),Nós
-Regressão Logística,0.9951,0.665,0.3301,0.2208,37
-Árvore de Decisão,0.9957,0.6651,0.3306,0.2185,2649
-Random Forest,0.9969,0.665,0.3319,11.0004,277014
-XGBoost,0.997,0.6655,0.3315,1.6872,4156
+Regressão Logística,0.9951,0.665,0.3301,0.3257,37
+Árvore de Decisão,0.9957,0.6651,0.3306,0.2398,2649
+Random Forest,0.9969,0.665,0.3319,11.2409,277014
+XGBoost,0.997,0.6655,0.3315,1.6788,4156
