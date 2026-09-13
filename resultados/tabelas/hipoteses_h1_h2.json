@@ -1,0 +1,14 @@
+{
+  "semente": 42,
+  "n_treino": 188296,
+  "n_validacao": 47074,
+  "n_atributos": 37,
+  "f1_base_max": 0.9957192633150821,
+  "f1_ensemble_max": 0.9969583644976315,
+  "melhor_ensemble": "XGBoost",
+  "h1_corroborada": true,
+  "h2_ganho_f1": 0.0012391011825494402,
+  "h2_om_tempo": 0.8849753118840838,
+  "h2_om_nos": 0.19559358058790877,
+  "h2_corroborada": false
+}

@@ -1,0 +1,11 @@
+{
+  "n_teste_independente": 11385,
+  "queda_f1_melhor_ensemble": 0.33146685500823736,
+  "h3_corroborada": true,
+  "quedas_por_modelo": {
+    "Regressão Logística": 0.3301,
+    "Árvore de Decisão": 0.3306,
+    "Random Forest": 0.3319,
+    "XGBoost": 0.3315
+  }
+}
