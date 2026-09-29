@@ -229,6 +229,37 @@ def avaliar_completo(
     return registro
 
 
+def ic_bootstrap_f1(
+    modelo: Any,
+    X: pd.DataFrame,
+    y: pd.Series,
+    n_reamostras: int = 1000,
+    semente: int = 42,
+) -> dict[str, float]:
+    """IC 95% do F1 da classe positiva por bootstrap sobre as instâncias de avaliação.
+
+    O modelo já deve estar ajustado: apenas as previsões são recalculadas em
+    cada reamostragem com reposição de (X, y), nunca o treino. O intervalo é
+    o percentil 2,5-97,5 da distribuição de F1 resultante.
+    """
+    rng = np.random.default_rng(semente)
+    y_true = np.asarray(y)
+    y_pred = np.asarray(modelo.predict(X))
+    n = len(y_true)
+
+    f1s = np.empty(n_reamostras)
+    for i in range(n_reamostras):
+        indices = rng.integers(0, n, size=n)
+        f1s[i] = f1_score(y_true[indices], y_pred[indices], pos_label=1, zero_division=0)
+
+    return {
+        "f1_observado": float(f1_score(y_true, y_pred, pos_label=1)),
+        "ic95_inferior": float(np.percentile(f1s, 2.5)),
+        "ic95_superior": float(np.percentile(f1s, 97.5)),
+        "n_reamostras": n_reamostras,
+    }
+
+
 def ordens_de_magnitude(valor_a: float, valor_b: float) -> float:
     """Diferença em ordens de magnitude entre dois valores positivos.
 
