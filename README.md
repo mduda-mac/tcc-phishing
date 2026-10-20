@@ -10,7 +10,7 @@ arquivos e salve-os em `dados/brutos/`:
 
 - **PhiUSIIL Phishing URL Dataset** — https://archive.ics.uci.edu/dataset/967/
   Salvar como `dados/brutos/PhiUSIIL_Phishing_URL_Dataset.csv`.
-- **Hannousse e Yahiouche** — DOI [10.17632/c2gw7fy2j4.1](https://doi.org/10.17632/c2gw7fy2j4.1)
+- **Hannousse e Yahiouche** — DOI [10.17632/c2gw7fy2j4.3](https://doi.org/10.17632/c2gw7fy2j4.3)
   Usar o arquivo `dataset_B_05_2020.csv`, salvo como
   `dados/brutos/dataset_B_05_2020.csv`.
 
