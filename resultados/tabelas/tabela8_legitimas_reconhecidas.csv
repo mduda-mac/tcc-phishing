@@ -1,0 +1,6 @@
+,Total,Regressão Logística,Árvore de Decisão,Random Forest,XGBoost
+"Com caminho, http",2855,0,0,0,0
+"Com caminho, https",2508,0,0,0,0
+"Sem caminho, http",317,0,0,0,0
+"Sem caminho, https",33,31,28,29,29
+Total,5713,31,28,29,29

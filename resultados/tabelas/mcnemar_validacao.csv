@@ -1,0 +1,7 @@
+modelo_a,modelo_b,so_a,so_b,p
+Regressão Logística,Árvore de Decisão,70,93,0.08454305818434492
+Regressão Logística,Random Forest,24,95,3.470921927175235e-11
+Regressão Logística,XGBoost,15,88,9.654706383228215e-14
+Árvore de Decisão,Random Forest,14,62,2.3236524454068507e-08
+Árvore de Decisão,XGBoost,17,67,3.495893514797302e-08
+Random Forest,XGBoost,23,25,0.8854334972865135
